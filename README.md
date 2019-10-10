@@ -7,7 +7,7 @@ distribute this software, either in source code form or as a compiled
 binary, for any purpose, commercial or non-commercial, and by any
 means.
 ## Usage:
-To use this library, simply place the GraphMap.py file on the work directory and import it.
+To use this library, simply place the GraphMap.py file on the work directory and import it. To learn how to use it or for more information in any specific aspect of the library, please read the GraphMap_Help.pdf file.
 ## Info
 Author: Danny Garcia<br/>
 Original relese Date: 08/05/2019<br/>
