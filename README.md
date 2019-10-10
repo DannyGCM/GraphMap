@@ -10,5 +10,5 @@ means.
 To use this library, simply place this file on the work directory and import it.
 ## Info
 Author: Danny Garcia<br/>
-Original relese Date: 6/17/2019<br/>
+Original relese Date: 08/17/2019<br/>
 Last update: 10/10/2019
