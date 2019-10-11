@@ -10,5 +10,4 @@ means.
 To use this library, simply place the GraphMap.py file on the work directory and import it. To learn how to use it or for more information in any specific aspect of the library, please read the GraphMap_Help.pdf file.
 ## Info
 Author: Danny Garcia<br/>
-Original relese Date: 08/05/2019<br/>
-Last update: 10/10/2019
+Relese Date: 08/05/2019<br/>
