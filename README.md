@@ -1,6 +1,6 @@
 # GraphMap Library
 ## About:
-GraphMap is a dependency-free object based graphics library based on the "graphics" library by John Zelle and pygame. GraphMap is designed to make the workflow of GUI based applications easier.
+GraphMap is a dependency-free object based graphics library inspired by the "graphics" library by John Zelle and pygame. GraphMap is designed to make the workflow of GUI based applications easier.
 ## Lisence:
 GraphMap is public domain. Anyone is free to copy, modify, publish, use, compile, sell, or
 distribute this software, either in source code form or as a compiled
