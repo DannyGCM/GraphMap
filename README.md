@@ -1,4 +1,4 @@
-# GraphMap Library
+# GraphMap
 ## About:
 GraphMap is a dependency-free object based graphics library inspired by the "graphics" library by John Zelle and pygame. GraphMap is designed to make the workflow of GUI based applications easier.
 ## Usage:
