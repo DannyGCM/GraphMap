@@ -1,21 +1,21 @@
 # Danny Garcia
-# Circle.py
+# Oval.py
 
 # Modules
 from .Window import Window as Window
 from .GraphicsPrimitive import GraphicsPrimitive as GraphicsPrimitive
 
-# Circle class (Primitive)
-class Circle(GraphicsPrimitive):
+# Oval class (Primitive)
+class Oval(GraphicsPrimitive):
 
     # Constructor
-    def __init__(self, window_name, point, radius=5, color=(0, 0, 0),
+    def __init__(self, window_name, point_a, point_b, color=(0, 0, 0),
     outline_color=(0, 0, 0), outline_width=0, inplace=True):
 
         # Arguments
         self._window = window_name
-        self._point = point
-        self._radius = radius
+        self._point_a = point_a
+        self._point_b = point_b
         self._color = color
         self._outline_color = outline_color
         self._outline_width = outline_width
@@ -27,36 +27,36 @@ class Circle(GraphicsPrimitive):
 
     # Class representation
     def __repr__(self):
-        text = "<Circle Object>\n"
-        text += f"Point: {self._point}\n"
-        text += f"Radius: {self._radius}\n"
+        text = "<Oval Object>\n"
+        text += f"Point A: {self._point_a}\n"
+        text += f"Point B: {self._point_b}\n"
         text += f"Color: {self._color}\n"
         text += f"Outline Color: {self._outline_color}\n"
         text += f"Outline Width: {self._outline_width}"
         return text
 
-    # Draws the circle
+    # Draws the oval
     def draw(self):
         if not self.is_drawn():
-            self._item = self._window.window.create_oval(self._point[0] - \
-            self._radius, self._point[1] + self._radius, self._point[0] + \
-            self._radius, self._point[1] - self._radius,
-            fill=Window.rgb_to_bit(self._color), outline=Window.rgb_to_bit(
-            self._outline_color), width=self._outline_width)
+            self._item = self._window.window.create_oval(self._point_a,
+            self._point_b, fill=Window.rgb_to_bit(self._color),
+            outline=Window.rgb_to_bit(self._outline_color),
+            width=self._outline_width)
             self._window.object_list.append(self._item)
         else: print("Object already drawn.")
 
-    # Moves the circle
+    # Moves the oval
     def move(self, x=0, y=0):
-        self._point = (self._point[0] + x, self._point[1] + y)
+        self._point_a = (self._point_a[0] + x, self._point_a[1] + y)
+        self._point_b = (self._point_b[0] + x, self._point_b[1] + y)
 
         if self.is_drawn():
             self.undraw()
             self.draw()
 
-    # Copies the circle
+    # Copies the oval
     def copy(self):
-        return Circle(self._window, self._point, radius=self._radius,
+        return Oval(self._window, self._point_a, self._point_b,
         color=self._color, outline_color=self._outline_color,
         outline_width=self._outline_width)
 
@@ -66,12 +66,12 @@ class Circle(GraphicsPrimitive):
         return self._window
 
     @property
-    def point(self):
-        return self._point
+    def point_a(self):
+        return self._point_a
 
     @property
-    def radius(self):
-        return self._radius
+    def point_b(self):
+        return self._point_b
 
     @property
     def color(self):
@@ -86,17 +86,17 @@ class Circle(GraphicsPrimitive):
         return self._outline_width
 
     # Setters
-    @point.setter
-    def point(self, point):
-        self._point = point
+    @point_a.setter
+    def point_a(self, point):
+        self._point_a = point
 
         if self.is_drawn():
             self.undraw()
             self.draw()
 
-    @radius.setter
-    def radius(self, radius):
-        self._radius = radius
+    @point_b.setter
+    def point_b(self, point):
+        self._point_b = point
 
         if self.is_drawn():
             self.undraw()
