@@ -20,7 +20,7 @@ GraphicsPrimitive as GraphicsPrimitive
 from .GraphMapSource.Line import Line as Line
 from .GraphMapSource.Rectangle import Rectangle as Rectangle
 from .GraphMapSource.Polygon import Polygon as Polygon
-from .GraphMapSource.Circle import Polygon as Circle
+from .GraphMapSource.Circle import Circle as Circle
 
 # Oval class (Primitive)
 class Oval(GraphicsPrimitive):
