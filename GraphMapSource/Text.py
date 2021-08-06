@@ -2,6 +2,7 @@
 # Text.py
 
 # Modules
+import tkinter as tk
 from .Window import Window as Window
 from .GraphicsPrimitive import GraphicsPrimitive as GraphicsPrimitive
 

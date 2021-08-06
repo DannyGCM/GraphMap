@@ -80,7 +80,7 @@ class Window:
         # Checks for complex objects
         for object_ in self.object_list:
             if type(object_) == tuple:
-                object_[0].tick()
+                object_[0].update()
 
         # Regulates frame delay
         if self.frame_cap != -1:
